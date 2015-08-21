@@ -9,6 +9,9 @@ group :development, :test do
   gem 'spork-rails'
   gem 'guard-rspec', '4.6.0'
   gem 'guard'
+  gem 'guard-spork'
+  gem 'spork', github: 'sporkrb/spork'
+  gem 'childprocess'
 end
 
 group :test do
@@ -28,6 +31,5 @@ group :doc do
 end
 
 group :production do
-
   gem 'rails_12factor', '0.0.2'
 end
